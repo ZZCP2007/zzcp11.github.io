@@ -209,6 +209,14 @@ var _hmt = _hmt || [];
    }
  </script>
 								
+if(!$response) {
+    echo"The Server is offline!";
+} else {
+    echo"<img width="64" height="64" src="asas1.png".$response['favicon']."" /> <br>
+    服务器信息 ".'</br>'.'mc.rgiss.com'.$response['hostname']." 在线状态： ".$response['version']." 目前在线人数：".$response['players']."位玩家 最大在线人数： ".$response['maxplayers']."人".". 服务器版本：'".$response['motd']."'.
+    延迟：".$response['ping']." 毫秒.";
+}
+								
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
